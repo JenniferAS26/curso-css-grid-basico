@@ -1,0 +1,68 @@
+:root {
+    /* --roseL: #f8bbd0; */
+    --roseR: #ffeeff;
+    /* --bblueL: #b2ebf2; */
+    --bblueR: #e5ffff;
+    /* --orangeL: #ffb380; */
+    --orangeR: #f2ccb2;
+
+}
+
+.container {
+    /* border: 5px solid #e1bee7; */
+    background-color: white;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-areas: 
+        "area1 area2 area2"
+        "area3 area3 area4"
+        "area5 area6 area7";
+    place-content: center;
+}
+
+.item {
+    font-size: 1.8rem;
+}
+
+.item-1 {
+    /* border: 5px solid var(--roseL); */
+    background-color: var(--roseR);
+    grid-area: area1;
+}
+
+.item-2 {
+    /* border: 5px solid var(--bblueL); */
+    background-color: var(--bblueR);
+    grid-area: area2;
+}
+
+.item-3 {
+    /* border: 5px solid #b2ebf2; */
+    background-color: var(--orangeR);
+    grid-area: area3;
+}
+
+.item-4 {
+    /* border: 5px solid #c76588; */
+    background-color: var(--roseR);
+    grid-area: area4;
+}
+
+.item-5 {
+    /* border: 5px solid #62a735; */
+    background-color: var(--roseR);
+    grid-area: area5;
+}
+
+.item-6 {
+    /* border: 5px solid #8a7ef6; */
+    background-color: var(--bblueR);
+    grid-area: area6;
+}
+
+.item-7 {
+    /* border: 5px solid #ffb380; */
+    background-color: var(--orangeR);
+    grid-area: area7;
+}
